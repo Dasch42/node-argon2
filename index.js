@@ -1,5 +1,6 @@
 const crypto = require('crypto')
 const bindings = require('bindings')('argon2')
+const Promise = require('bluebird');
 
 const defaults = Object.freeze({
   timeCost: 3,
